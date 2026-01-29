@@ -31,12 +31,12 @@ svg.stripe {
   position: absolute;
   left: 0;
   width: 100%;
-  height: clamp(100px, 15dvw, 160px);
+  height: clamp(100px, 15dvw, 150px);
 }
 
 @media (max-width: 500px) {
   svg.stripe {
-    height: clamp(300px, 20dvw, 200px);
+    height: clamp(150px, 20dvw, 200px);
   }
 }
 
