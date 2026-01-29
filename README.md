@@ -26,16 +26,16 @@ O projeto foi desenvolvido em HTML, CSS e JavaScript puro, com foco em simplicid
 1. Clone o repositório:
 
 ```bash
-   git clone https://github.com/lucasbecker/ministerio-da-saude-adverte
+   git clone https://github.com/lucasbecker/FBCE00
 ```
 
 2. Execute o projeto:
 
-2.1 — Abrir localmente
+- Abrir localmente
 
 Abra o arquivo index.html em um navegador moderno como o Chrome, Edge ou Firefox.
 
-2.2 — Servidor local (recomendado)
+- Servidor local (recomendado)
 
 ```bash
 npx serve
