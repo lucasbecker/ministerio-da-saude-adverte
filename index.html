@@ -2,59 +2,45 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <title>Ministério da Saúde Adverte</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
 
-      html,
-      body {
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        background: black;
-        font-family: Arial, Helvetica, sans-serif;
-      }
+    <title>#FBCE00</title>
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+    <meta name="description" content="O ministério da saúde adverte:" />
+    <meta
+      name="keywords"
+      content="meme, humor, video, ministerio da saude, adverte, você sofre"
+    />
 
-      .container {
-        position: relative;
-        width: 100%;
-        height: 100%;
-      }
+    <meta name="author" content="Lucas Becker" />
+    <link rel="author" href="https://lucasbecker.github.io" />
 
-      video {
-        position: absolute;
-        inset: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="#FBCE00" />
+    <meta property="og:description" content="O ministério da saúde adverte:" />
+    <meta
+      property="og:image"
+      content="https://lucasbecker.github.io/ministerio-da-saude-adverte/assets/thumbnail.png"
+    />
+    <meta
+      property="og:url"
+      content="https://lucasbecker.github.io/ministerio-da-saude-adverte"
+    />
 
-      svg.stripe {
-        position: absolute;
-        left: 0;
-        width: 100%;
-        height: clamp(100px, 15dvw, 160px);
-      }
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="#FBCE00" />
+    <meta name="twitter:description" content="O ministério da saúde adverte:" />
+    <meta
+      name="twitter:image"
+      content="https://lucasbecker.github.io/ministerio-da-saude-adverte/assets/thumbnail.png"
+    />
 
-      @media (max-width: 1024px) {
-        svg.stripe {
-          height: clamp(300px, 20dvw, 200px);
-        }
-      }
-
-      svg.top {
-        top: 0;
-      }
-
-      svg.bottom {
-        bottom: 0;
-      }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
   </head>
+
   <body>
     <div class="container">
       <video id="camera" autoplay playsinline></video>
@@ -82,7 +68,7 @@
           </text>
         </mask>
 
-        <rect width="100%" height="100%" fill="#ffd400" mask="url(#mask-you)" />
+        <rect width="100%" height="100%" fill="#FBCE00" mask="url(#mask-you)" />
       </svg>
 
       <svg
@@ -96,7 +82,7 @@
 
           <text
             x="50%"
-            y="54"
+            y="52"
             text-anchor="middle"
             dominant-baseline="middle"
             font-size="120"
@@ -112,28 +98,12 @@
         <rect
           width="100%"
           height="100%"
-          fill="#ffd400"
+          fill="#FBCE00"
           mask="url(#mask-suffer)"
         />
       </svg>
     </div>
 
-    <script>
-      const video = document.getElementById("camera");
-
-      navigator.mediaDevices
-        .getUserMedia({
-          video: {
-            facingMode: "user",
-          },
-          audio: false,
-        })
-        .then((stream) => {
-          video.srcObject = stream;
-        })
-        .catch((err) => {
-          alert("Error accessing camera: " + err.message);
-        });
-    </script>
+    <img src="https://cloud.umami.is/p/FNKi7LQ16" id="umami-pixel" />
   </body>
 </html>
